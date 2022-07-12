@@ -197,7 +197,7 @@ input::placeholder{
 .div-questions{
     background-color: var(--White);
     width: 100%;
-    height: 120vh;
+    height: 130vh;
 }
 .h2-questions{
     font-size: 32px;
@@ -239,7 +239,7 @@ input::placeholder{
     justify-content: center;
     margin-top: 150px;
 }
-#button-questions{
+#button-questions, #button-questions2, #button-questions3{
     width: 60%;
     height: 8vh;
     background-color: var(--Grey);
@@ -253,7 +253,7 @@ input::placeholder{
     border-radius: 4px;
     cursor: pointer;
 }
-#polygon{
+#polygon, #polygon2, #polygon3{
     display: inline-block;
     margin-right: 10px;
 }
@@ -261,7 +261,7 @@ input::placeholder{
     transform: rotate(90deg);
     margin-right: 15px;
 }
-#slamano{
+#div-questions, #div-questions2, #div-questions3{
     width: 60%;
     height: 10vh;
     display: block;
@@ -271,7 +271,7 @@ input::placeholder{
     border-radius: 4px;
     display: none;
 }
-#slamano p{
+#div-questions p, #div-questions2 p, #div-questions3 p{
     font-size: 16px;
     font-weight: 400;
     color: var(--Black);

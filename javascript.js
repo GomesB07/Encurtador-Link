@@ -1,15 +1,49 @@
-let botao = document.getElementsByClassName("button2-questions")
-let menu = document.getElementsByClassName("p2-questions")
-let imagem = document.getElementsByClassName("polygon")
+let botao = document.getElementById("button-questions");
+    let menu = document.getElementById("div-questions");
+    let imagem = document.getElementById("polygon");
 
-function test(){
+    function event1(){
 
-    if (menu.style.display == "block"){
-        menu.style.display = "none"
-        imagem = "imagem-pergunta"
-    } else {
-        menu.style.display = "block"
-        imagem.id = "imagem-pergunta-girar"
+        if (menu.style.display == "block"){
+            menu.style.display = "none"
+            imagem.id = "polygon"
+        } else {
+            menu.style.display = "block"
+            imagem.id = "polygon-girar"
+        }
     }
+    botao.addEventListener("click", event1)
+
+
+    let botao2 = document.getElementById("button-questions2");
+    let menu2 = document.getElementById("div-questions2");
+    let imagem2 = document.getElementById("polygon2");
+
+    function event2(){
+
+        if(menu2.style.display == "block"){
+            menu2.style.display = "none"
+            imagem2.id = "polygon2"
+        } else{
+            menu2.style.display = "block"
+            imagem2.id = "polygon-girar"
+        }
 }
-botao.addEventListener("click", test)
+    botao2.addEventListener("click", event2)
+
+
+    let botao3 = document.getElementById("button-questions3")
+    let menu3 = document.getElementById("div-questions3")
+    let imagem3 = document.getElementById("polygon3")
+
+    function event3(){
+
+        if(menu3.style.display == "block"){
+            menu3.style.display = "none"
+            imagem3.id = "polygon3"
+        } else{
+            menu3.style.display = "block"
+            imagem3.id = "polygon-girar"
+        }
+    }
+    botao3.addEventListener("click", event3)
