@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Encurtador de Link</title>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <img class="rectangle" src="./Assets/Rectangle.svg" alt="">
+            <h1>Encurtador</h1>
+            <ul>
+                <li>Encurtar</li>
+                <li>Preços</li>
+            </ul>
+        </header>
+        <main>
+            <div class="main-left">
+                <h2 class="h2-main">Deixe seus links mais<br> amigáveis</h2>
+                <p class="p-main">Um encurtador de URL criado com ferramentas poderosas<br> para ajudar você a crescer e
+                    proteger sua
+                    marca.</p>
+                <button class="button-comece">Comece agora!</button>
+            </div>
+            <div class="main-right">
+                <img class="pc" src="./Assets/undraw_setup_analytics_re_foim 1.svg" alt="">
+            </div>
+        </main>
+
+        <div class="teste">
+            <div class="pesquisa">
+                <input type="text" placeholder="Digite sua url...">
+                <button class="button-encurtar">Encurtar</button>
+            </div>
+        </div>
+
+        <div class="information">
+            <h2 class="h2-information">O encurtador de links feito para<br> você aumentar os cliques</h2>
+            <div class="div-columns">
+                <div class="columns-information">
+                    <img src="./Assets/item1.svg" alt="" class="img-information">
+                    <p class="title-img-information">Link fácil</p>
+                    <p class="text-information">Com mais cliques, aumenta o reconhecimento<br> da marca e a confiança do
+                        consumidor</p>
+                </div>
+                <div class="columns-information">
+                    <img src="./Assets/item2.svg" alt="" class="img-information">
+                    <p class="title-img-information">Aumente os resultados</p>
+                    <p class="text-information">Temos uma ferramenta poderosa para você<br> conseguir extrair o máximo
+                        dos
+                        seus links, fazer<br> análises e tomar decisões mais inteligentes.</p>
+                </div>
+                <div class="columns-information">
+                    <img src="./Assets/item3.svg" alt="" class="img-information">
+                    <p class="title-img-information">Link personalizado</p>
+                    <p class="text-information">Você pode criar links e ainda personalizar de<br> forma simples e fácil
+                        para
+                        aumentar ainda os<br> acessos.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="div-questions">
+            <h2 class="h2-questions">Comece agora e tudo 100% gratuito</h2>
+            <p class="p-subtitle-questions">Impulsione sua marca, ganhe autoridade e mais visualizações</p>
+            <button class="button-comece2">Comece agora!</button>
+            <h3 class="h3-questions">Perguntas frequentes</h3>
+
+            <button id="button-questions"><img id="polygon" src="./Assets/Polygon 2.svg">O que é um
+                encurtador?</button>
+            <div id="slamano"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ultrices et tortor non quam
+                duis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ultrices et tortor non quam duis.</p></div>
+
+        </div>
+        <footer>
+            <p class="p-footer">@DevMentor Brasil - Todos direitos reservados 2022</p>
+            <div class="div-social">
+                <button class="button-footer"><img class="social" src="./Assets/logo-instagram.svg" alt="Instagram"></button>
+                <button class="button-footer"><img class="social" src="./Assets/logo-facebook.svg" alt="Facebook"></button>
+                <button class="button-footer"><img class="social" src="./Assets/logo-youtube.svg" alt="Youtube"></button>
+            </div>
+        </footer>
+    </div>
+</body>
+<script>
+
+
+    let botao = document.getElementById("button-questions")
+    let menu = document.getElementById("slamano")
+    let imagem = document.getElementById("polygon")
+
+    function test(){
+
+        if (menu.style.display == "block"){
+            menu.style.display = "none"
+            imagem.id = "polygon"
+        } else {
+            menu.style.display = "block"
+            imagem.id = "polygon-girar"
+        }
+}
+    botao.addEventListener("click", test)
+</script>
+
+</html>

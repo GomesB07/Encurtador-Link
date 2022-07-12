@@ -1,0 +1,312 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+:root{
+    --White: #FFFFFF;
+    --White2: #F5F5F5;
+    --Grey: #E5E5E5;
+    --Metal: #F0F1F6;
+    --Black: #000000;
+    --Black2: #1D2730;
+    --Blue: #07C9C9;
+}
+body{
+    width: 100%;
+    height: 100%;
+}
+.container{
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+header{
+    background-color: var(--White);
+    width: 100%;
+    height: 15vh;
+    display: flex;
+    align-items: center;
+}
+
+h1{
+    font-size: 36px;
+    font-weight: 700;
+    letter-spacing: 0.055em;
+    color: var(--Black2);
+    margin-left: 55px;
+}
+.rectangle{
+    margin: -5px 0 0 51px;
+    position: absolute;
+}
+ul{
+    margin-left: 50px;
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+}
+li{
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: 0.055em;
+    color: var(--Black2);
+    margin: 0 10px;
+    cursor: pointer;
+}
+li:hover{
+    color: var(--Blue);
+}
+main{
+    height: 80vh;
+    display: flex;
+}
+.main-left{
+    background-color: var(--White);
+    width: 50%;
+}
+.h2-main{
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 150%;
+    color: var(--Black2);
+    margin: 100px 0 0 50px;
+}
+.p-main{
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 150%;
+    color: var(--Black2);
+    margin: 20px 0 0 50px;
+}
+.button-comece{
+    width: 250px;
+    height: 45px;
+    font-size: 20px;
+    border: none;
+    border-radius: 4px;
+    background-color: var(--Blue);
+    color: var(--White);
+    margin: 40px 0 0 50px;
+    cursor: pointer;
+}
+.button-comece:hover{
+    background-color: #16e6e6;
+}
+.main-right{
+    background-color: var(--White);
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pc{
+    width: 500px;
+}
+.teste{
+    width: 100%;
+    height: 15vh;
+    position: absolute;
+    margin-top: -55px;
+    display: flex;
+    justify-content: center;
+}
+.pesquisa{
+    background-color: var(--Blue);
+    width: 70%;
+    height: 15vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 8px;
+    padding: 0 30px;
+}
+input{
+    height: 44px;
+    width: 75%;
+    background-color: var(--White);
+    border: none;
+    border-radius: 4px;
+    padding-left: 15px;
+    display: flex;
+    align-items: center;
+}
+input::placeholder{
+    color: var(--Black2);
+    font-size: 13px;
+    font-weight: 400;
+    letter-spacing: 0.055em;
+}
+.button-encurtar{
+    width: 20%;
+    height: 44px;
+    background-color: var(--Black2);
+    color: var(--White);
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+}
+.button-encurtar:hover{
+    background-color: #2b353e;
+}
+.information{
+    background-color: var(--White2);
+    width: 100%;
+    height: 120vh;
+}
+.h2-information{
+    font-size: 36px;
+    font-weight: 700;
+    color: var(--Black);
+    display: flex;
+    justify-content: center;
+    padding-top: 149px;
+}
+.div-columns{
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 200px;
+}
+.columns-information{
+    width: 25%;
+    height: 350px;
+    padding: 0 20px;
+}
+.img-information{
+    display: block;
+    margin: auto;
+}
+.title-img-information{
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--Black);
+    margin: 30px 0 10px 0;
+}
+.text-information{
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--Black2);
+}
+.div-questions{
+    background-color: var(--White);
+    width: 100%;
+    height: 120vh;
+}
+.h2-questions{
+    font-size: 32px;
+    font-weight: 700;
+    color: var(--Black);
+    display: flex;
+    justify-content: center;
+    padding-top: 80px;
+}
+.p-subtitle-questions{
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--Black2);
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+.button-comece2{
+    width: 250px;
+    height: 45px;
+    font-size: 18px;
+    font-weight: 700;
+    border: none;
+    border-radius: 4px;
+    background-color: var(--Blue);
+    color: var(--White);
+    display: block;
+    margin: 30px auto 0 auto;
+    cursor: pointer;
+}
+.button-comece2:hover{
+    background-color: #16e6e6;
+}
+.h3-questions{
+    font-size: 36px;
+    font-weight: 700;
+    color: var(--Black);
+    display: flex;
+    justify-content: center;
+    margin-top: 150px;
+}
+#button-questions{
+    width: 60%;
+    height: 8vh;
+    background-color: var(--Grey);
+    font-size: 18px;
+    font-weight: 700;
+    text-align: left;
+    display: block;
+    margin: 20px auto 0 auto;
+    padding: 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+#polygon{
+    display: inline-block;
+    margin-right: 10px;
+}
+#polygon-girar{
+    transform: rotate(90deg);
+    margin-right: 15px;
+}
+#slamano{
+    width: 60%;
+    height: 10vh;
+    display: block;
+    margin: 5px auto 0 auto;
+    padding: 15px;
+    background-color: var(--Grey);
+    border-radius: 4px;
+    display: none;
+}
+#slamano p{
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--Black);
+}
+footer{
+    width: 100%;
+    height: 15vh;
+    background-color: var(--White);
+    display: block;
+    margin: auto;
+}
+.p-footer{
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--Black2);
+    text-align: center;
+    margin-bottom: 30px;
+
+}
+.div-social{
+    width: 200px;
+    display: flex;
+    margin: auto;
+    justify-content: space-evenly;
+}
+.button-footer{
+    width: 50px;
+    background-color: transparent;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.social{
+    width: 28.56px;
+    height: 28.56px;
+    cursor: pointer;
+}
