@@ -440,8 +440,7 @@ footer{
     }
     #div-questions, #div-questions2, #div-questions3{
         width: 90%;
-        display: flex;
-        align-items: center;
+        display: none;
     }
     #div-questions p, #div-questions2 p, #div-questions3 p{
         font-size: 12px;
