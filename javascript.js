@@ -47,3 +47,22 @@ let botao = document.getElementById("button-questions");
         }
     }
     botao3.addEventListener("click", event3)
+
+    // MENU INICIAL
+
+    let botaoNav = document.getElementById("img-menu")
+    let abaMenu = document.getElementById("aba-menu")
+    let img = document.getElementById("aba-img")
+
+    function test(){
+
+        if(abaMenu.style.display == "block"){
+            abaMenu.style.display = "none"
+            img.style.display = "none"
+        } else{
+            abaMenu.style.display = "block"
+            img.style.display = "block"
+        }
+    }
+    botaoNav.addEventListener("click", test)
+    img.addEventListener("click", test)
