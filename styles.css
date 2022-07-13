@@ -68,16 +68,15 @@ main{
     width: 50%;
 }
 .h2-main{
-    font-size: 48px;
+    font-size: clamp(48px, 48px, 3rem);
     font-weight: 700;
     line-height: 150%;
     color: var(--Black2);
     margin: 100px 0 0 50px;
 }
 .p-main{
-    font-size: 18px;
+    font-size: clamp(0.8rem, 18px, 5vw);
     font-weight: 400;
-    line-height: 150%;
     color: var(--Black2);
     margin: 20px 0 0 50px;
 }
@@ -112,16 +111,17 @@ main{
     margin-top: -55px;
     display: flex;
     justify-content: center;
+    padding: 0 10px;
 }
 .pesquisa{
     background-color: var(--Blue);
-    width: 70%;
+    width: 1200px;
     height: 15vh;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
     border-radius: 8px;
-    padding: 0 30px;
+    padding: 0 20px;
 }
 input{
     height: 44px;
@@ -153,10 +153,9 @@ input::placeholder{
 .button-encurtar:hover{
     background-color: #2b353e;
 }
-.information{
-    background-color: var(--White2);
+.section-h2-information{
     width: 100%;
-    height: 120vh;
+    background-color: var(--White2);
 }
 .h2-information{
     font-size: 36px;
@@ -166,31 +165,43 @@ input::placeholder{
     justify-content: center;
     padding-top: 149px;
 }
-.div-columns{
+.information{
+    background-color: var(--White2);
     width: 100%;
-    height: 60vh;
+    height: 80vh;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
-    padding-top: 200px;
 }
-.columns-information{
-    width: 25%;
-    height: 350px;
-    padding: 0 20px;
+.div-columns{
+    width: 30%;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }
-.img-information{
-    display: block;
-    margin: auto;
+.div-img-information{
+    width: 80%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
 }
-.title-img-information{
-    font-size: 24px;
+.div-img-information img{
+    width: 100%;
+    height: 100%;
+}
+.div-text-information{
+    width: 80%;
+    height: 50%;
+}
+.title-information{
+    font-size: clamp(0.5rem, 1.8vw, 2vw);
     font-weight: 700;
     color: var(--Black);
-    margin: 30px 0 10px 0;
+    margin: 10px 0;
 }
 .text-information{
-    font-size: 16px;
+    font-size: clamp(0.5em, 1.2vw, 3vw);
     font-weight: 400;
     color: var(--Black2);
 }
@@ -243,6 +254,7 @@ input::placeholder{
     width: 60%;
     height: 8vh;
     background-color: var(--Grey);
+    color: var(--Black);
     font-size: 18px;
     font-weight: 700;
     text-align: left;
@@ -309,4 +321,135 @@ footer{
     width: 28.56px;
     height: 28.56px;
     cursor: pointer;
+}
+@media(max-width: 1050px){
+    main{
+        height: 70vh;
+    }
+    .main-right{
+        display: none;
+    }
+    .main-left{
+        width: 100%;
+    }
+    .h2-main{
+        font-size: clamp(3.5rem, 7vw, 10vw);
+        margin: 50px 0 0 20px;
+    }
+    .p-main{
+        font-size: clamp(1.2rem, 2.5vw, 5vw);
+        margin-left: 20px;
+    }
+    .button-comece{
+        margin-left: 20px;
+    }
+    .information{
+        width: 100%;
+        height: 200vh;
+        display: flex;
+        flex-direction: column;
+    }
+    .div-columns{
+        width: 500px;
+        height: 500px;
+    }
+    .div-img-information{
+        width: 500px;
+        height: 70%;
+    }
+    .div-img-information img{
+        width: 500px;
+    }
+    .div-text-information{
+        width: 500px;
+        height: 30%;
+    }
+    .title-information{
+        font-size: clamp(30px, 3vw, 10vw);
+    }
+    .text-information{
+        font-size: clamp(20px, 1.2vw, 10vw);
+    }
+}
+@media(max-width: 700px){
+    main{
+        height: 70vh;
+    }
+    .h2-main{
+        font-size: clamp(2rem, 7vw, 10vw);
+    }
+    .p-main{
+        font-size: clamp(0.8rem, 2.5vw, 5vw);
+    }
+    .teste{
+        margin-top: -70px;
+    }
+    .pesquisa{
+        display: flex;
+        flex-direction: column;
+        height: 20vh;
+    }
+    input, .button-encurtar{
+        width: 100%;
+    }
+    .h2-information{
+        font-size: clamp(1.5rem, 4vw, 5vw);
+    }
+    .information{
+        width: 100%;
+        height: 200vh;
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+    }
+    .div-columns{
+        width: 80%;
+        height: 500px;
+    }
+    .div-img-information{
+        width: 100%;
+        height: 70%;
+    }
+    .div-img-information img{
+        width: 100%;
+    }
+    .div-text-information{
+        width: 100%;
+        height: 30%;
+    }
+    .title-information{
+        font-size: clamp(1.2rem, 3vw, 10vw);
+    }
+    .text-information{
+        font-size: clamp(0.8rem, 1.2vw, 10vw);
+    }
+    .h2-questions{
+        font-size: clamp(1.3rem, 4vw, 5vw);
+    }
+    .p-subtitle-questions{
+        font-size: clamp(0.6rem, 3vw, 5vw);
+    }
+    .h3-questions{
+        font-size: clamp(1.5rem, 4vw, 5vw);
+    }
+    #button-questions, #button-questions2, #button-questions3{
+        width: 90%;
+        font-size: 12px;
+        display: flex;
+        align-items: center;
+    }
+    #div-questions, #div-questions2, #div-questions3{
+        width: 90%;
+        display: flex;
+        align-items: center;
+    }
+    #div-questions p, #div-questions2 p, #div-questions3 p{
+        font-size: 12px;
+    }
+    .p-footer{
+        font-size: clamp(0.8rem, 2vw, 5vw);
+    }
+    ul{
+        display: none;
+    }
 }
