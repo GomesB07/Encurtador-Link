@@ -393,9 +393,9 @@ input::placeholder{
         position: absolute;
         z-index: 5;
         display: none;
-    }
-    #aba-menu:hover{
-        transition: all 1s 0.2s ease-in-out;
+        animation-duration: 0.5s;
+        animation-name: teste;
+        overflow-y: hidden;
     }
     #aba-img{
         display: block;
@@ -419,7 +419,7 @@ input::placeholder{
         margin-left: 30px;
     }
     .main{
-        height: 70vh;
+        height: 55vh;
     }
     .rectangle{
         margin-left: 87px;
@@ -459,9 +459,12 @@ input::placeholder{
         display: flex;
         flex-direction: column;
     }
+    .div-questions{
+        height: 90%;
+    }
     .div-columns{
         width: 80%;
-        height: 500px;
+        height: 450px;
     }
     .div-img-information{
         width: 100%;
@@ -495,6 +498,9 @@ input::placeholder{
         display: flex;
         align-items: center;
     }
+    #button-questions{
+        margin-top: 30px;
+    }
     #div-questions, #div-questions2, #div-questions3{
         width: 90%;
         display: none;
@@ -502,7 +508,18 @@ input::placeholder{
     #div-questions p, #div-questions2 p, #div-questions3 p{
         font-size: 12px;
     }
+    .footer{
+        margin-top: 50px;
+    }
     .p-footer{
         font-size: clamp(0.8rem, 2vw, 5vw);
+    }
+}
+@keyframes teste{
+    from{
+        width: 0%;
+    }
+    to{
+        width: 100%;
     }
 }
